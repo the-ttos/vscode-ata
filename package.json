@@ -1,6 +1,6 @@
 {
-    "name": "trandwich",
-    "displayName": "trandwich",
+    "name": "ata",
+    "displayName": "ata",
     "description": "",
     "version": "0.0.1",
     "engines": {
@@ -11,15 +11,15 @@
     ],
     "contributes": {
         "languages": [{
-            "id": "trandwich",
-            "aliases": ["trandwich", "trandwich"],
-            "extensions": [".ttt"],
+            "id": "ata",
+            "aliases": ["ata", "ata"],
+            "extensions": [".ata"],
             "configuration": "./language-configuration.json"
         }],
         "grammars": [{
-            "language": "trandwich",
-            "scopeName": "source.trandwich",
-            "path": "./syntaxes/trandwich.tmLanguage.json"
+            "language": "ata",
+            "scopeName": "source.ata",
+            "path": "./syntaxes/ata.tmLanguage.json"
         }]
     }
 }

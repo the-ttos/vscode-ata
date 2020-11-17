@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "trandwich",
+	"name": "ata",
 	"patterns": [
 		{
 			"include": "#keywords"
@@ -24,43 +24,43 @@
 	"repository": {
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.trandwich",
+				"name": "keyword.control.ata",
 				"match": "\\b(ok|mov|var)\\b"
 			}]
 		},
 		"label": {
 			"patterns": [{
-				"name": "entity.name.function.trandwich",
+				"name": "entity.name.function.ata",
 				"match": "^\\w+"
 			}]
 		},
 		"numbers": {
 			"patterns": [{
-				"name": "keyword.other.unit.trandwich",
+				"name": "keyword.other.unit.ata",
 				"match": "(\\s|^)[0-9]+"
 			}]
 		},
 		"registers": {
 			"patterns": [{
-				"name": "constant.language.trandwich",
+				"name": "constant.language.ata",
 				"match": "\\b(eax|ebx|ecx|edx|eip|ebp|esp|esi|edi|ah|am|al|bh|bm|bl|ch|cm|cl|dh|dm|dl|ax|bx|cx|dx|ip|bp|sp|si|di)\\b"
 			}]
 		},
 		"strings": {
-			"name": "string.quoted.double.trandwich",
+			"name": "string.quoted.double.ata",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.trandwich",
+					"name": "constant.character.escape.ata",
 					"match": "\\\\."
 				}
 			]
 		},
 		"comment_line": {
-			"name": "comment.line.double-slash.trandwich",
+			"name": "comment.line.double-slash.ata",
 			"match": "(#.*)"
 		}
 	},
-	"scopeName": "source.trandwich"
+	"scopeName": "source.ata"
 }
