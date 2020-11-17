@@ -1,0 +1,66 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "trandwich",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#label"
+		},
+		{ 
+			"include": "#numbers"
+		},
+		{
+			"include": "#strings"
+		},
+		{ 
+			"include": "#comment_line"
+		},
+		{ 
+			"include": "#registers"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.trandwich",
+				"match": "\\b(ok|mov|var)\\b"
+			}]
+		},
+		"label": {
+			"patterns": [{
+				"name": "entity.name.function.trandwich",
+				"match": "^\\w+"
+			}]
+		},
+		"numbers": {
+			"patterns": [{
+				"name": "keyword.other.unit.trandwich",
+				"match": "(\\s|^)[0-9]+"
+			}]
+		},
+		"registers": {
+			"patterns": [{
+				"name": "constant.language.trandwich",
+				"match": "\\b(eax|ebx|ecx|edx|eip|ebp|esp|esi|edi|ah|am|al|bh|bm|bl|ch|cm|cl|dh|dm|dl|ax|bx|cx|dx|ip|bp|sp|si|di)\\b"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.trandwich",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.trandwich",
+					"match": "\\\\."
+				}
+			]
+		},
+		"comment_line": {
+			"name": "comment.line.double-slash.trandwich",
+			"match": "(#.*)"
+		}
+	},
+	"scopeName": "source.trandwich"
+}
