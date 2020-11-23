@@ -6,6 +6,9 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#specifications"
+		},
+		{
 			"include": "#label"
 		},
 		{ 
@@ -25,20 +28,32 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.ata",
-				"match": "\\b(ok|mov|var)\\b"
+				"match": "\\b(ok|mov|var|add|sub|mul|div|not|inc|dec|cld|clu|min|max|xor|con|acc|com)\\b"
+			}]
+		},
+		"specifications": {
+			"patterns": [{
+				"name": "variable.name.ata",
+				"match": "\\b(value|third|tryte|double|triple|super)\\b"
 			}]
 		},
 		"label": {
 			"patterns": [{
 				"name": "entity.name.function.ata",
 				"match": "^\\w+"
-			}]
+				}]
 		},
 		"numbers": {
-			"patterns": [{
-				"name": "keyword.other.unit.ata",
-				"match": "(\\s|^)[0-9]+"
-			}]
+			"patterns": [
+			{
+				"name": "string.unquoted",
+				"match": "(\\s|^)0t([0-9a-qA-Q_])+"
+			},	
+			{
+				"name": "constant.numeric.decimal.ata",
+				"match": "(\\s|^)[0-9_]+"
+			}
+			]
 		},
 		"registers": {
 			"patterns": [{

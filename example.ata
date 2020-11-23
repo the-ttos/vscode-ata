@@ -1,0 +1,7 @@
+section
+    var foo triple 0t19F_QAF_PL2
+    var bar double
+    mov bar value 387420488
+    xor foo bar
+    mov eax [foo]
+    ok
