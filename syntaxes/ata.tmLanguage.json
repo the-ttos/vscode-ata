@@ -28,13 +28,13 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.ata",
-				"match": "\\b(ok|mov|var|add|sub|mul|div|not|inc|dec|cld|clu|min|max|xor|con|acc|com)\\b"
+				"match": "\\b(ok|mov|var|val|add|sub|mul|div|not|inc|dec|cld|clu|min|max|xor|con|acc|com)\\b"
 			}]
 		},
 		"specifications": {
 			"patterns": [{
 				"name": "variable.name.ata",
-				"match": "\\b(value|third|tryte|double|triple|super)\\b"
+				"match": "\\b(third|tryte|double|triple|super)\\b"
 			}]
 		},
 		"label": {
@@ -46,9 +46,13 @@
 		"numbers": {
 			"patterns": [
 			{
-				"name": "string.unquoted",
-				"match": "(\\s|^)0t([0-9a-qA-Q_])+"
-			},	
+				"name": "constant.numeric.hept.ata",
+				"match": "(\\s|^)0v[0-9a-qA-Q_]+"
+			},
+			{
+				"name": "constant.numeric.ternary.ata",
+				"match": "(\\s|^)[0-2_]+t"
+			},
 			{
 				"name": "constant.numeric.decimal.ata",
 				"match": "(\\s|^)[0-9_]+"

@@ -1,7 +1,9 @@
 section
-    var foo triple 0t19F_QAF_PL2
+    var foo triple 0v19FQAFPL2
     var bar double
-    mov bar value 387420488
+    mov bar 7420488
+    var baz tryte 120110100t
     xor foo bar
+    clu foo baz
     mov eax [foo]
     ok
